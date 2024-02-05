@@ -7,7 +7,7 @@ const Products = ({ products }) => {
       {products.map((product) => {
         return (
           <Link to={`/product/${product.id}`} state={{ product: product }} key={product.id}>
-            <div className="grid grid-rows-[250px,auto,auto] gap-1">
+            <div className="grid grid-rows-[250px,auto,auto] gap-1 h-full">
               <div className="flex items-center justify-center">
                 <img
                   src={product.image}
