@@ -13,7 +13,7 @@ const Router = () => {
       errorElement: <ErrorPage />,
     },
     {
-      path: '/product',
+      path: '/product/:id',
       element: <Product />,
     },
     {
