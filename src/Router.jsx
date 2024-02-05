@@ -1,5 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './pages/App';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Products from './pages/Products';
 import ErrorPage from './pages/ErrorPage';
 
 const Router = () => {
@@ -11,15 +14,15 @@ const Router = () => {
     },
     {
       path: '/products',
-      element: <App />,
+      element: <Products />,
     },
     {
       path: '/cart',
-      element: <App />,
+      element: <Cart />,
     },
     {
       path: '/checkout',
-      element: <App />,
+      element: <Checkout />,
     },
   ]);
 
