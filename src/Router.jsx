@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './pages/App';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Products from './pages/Products';
+import Product from './pages/Product';
 import ErrorPage from './pages/ErrorPage';
 
 const Router = () => {
@@ -13,8 +13,8 @@ const Router = () => {
       errorElement: <ErrorPage />,
     },
     {
-      path: '/products',
-      element: <Products />,
+      path: '/product',
+      element: <Product />,
     },
     {
       path: '/cart',
