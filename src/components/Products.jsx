@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Products = ({ products }) => {
+const Products = ({ products, cartItems, addToCartItems }) => {
   return (
     <div className="grid auto-rows-fr grid-cols-[repeat(_auto-fit,_minmax(250px,_1fr))] justify-items-center gap-x-4 gap-y-6 px-2 py-6">
       {products.map((product) => {
         return (
-          <Link to={`/product/${product.id}`} state={{ product: product }} key={product.id}>
-            <div className="grid grid-rows-[250px,auto,auto] gap-1">
+          <Link to={`/product/${product.id}`} state={{ product, cartItems, addToCartItems }} key={product.id}>
+            <div className="grid h-full grid-rows-[250px,auto,auto] gap-1">
               <div className="flex items-center justify-center">
                 <img
                   src={product.image}

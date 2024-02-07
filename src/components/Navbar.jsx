@@ -9,7 +9,7 @@ const Navbar = () => {
       </Link>
       <div className="">
         <ul className="flex gap-4">
-          <NavItem to={'/products'} title={'Products'} />
+          <NavItem to={'/checkout'} title={'Checkout'} />
           <NavItem to={'/cart'} title={'Cart'} />
         </ul>
       </div>

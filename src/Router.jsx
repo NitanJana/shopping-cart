@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './pages/App';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
-import Product from './pages/Product';
+import ProductDetails from './pages/ProductDetails';
 import ErrorPage from './pages/ErrorPage';
 
 const Router = () => {
@@ -14,7 +14,7 @@ const Router = () => {
     },
     {
       path: '/product/:id',
-      element: <Product />,
+      element: <ProductDetails />,
     },
     {
       path: '/cart',
