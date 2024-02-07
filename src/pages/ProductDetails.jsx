@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ShopContext } from '../Router';
+import ShopContext from '../contexts/shopContext';
 import Navbar from '../components/Navbar';
 
 const ProductDetails = () => {

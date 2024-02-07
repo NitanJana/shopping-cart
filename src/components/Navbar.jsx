@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import NavItem from './NavItem';
+import { useContext } from 'react';
+import ShopContext from '../contexts/shopContext';
 
 const Navbar = () => {
+  const { cartItems } = useContext(ShopContext);
+  const productCount = cartItems.reduce((acc, curr) => acc + curr.cartItemsCount, 0);
   return (
     <nav className="flex items-center justify-between bg-teal-400 px-4 py-2">
       <Link to={'/'}>
@@ -10,7 +14,10 @@ const Navbar = () => {
       <div className="">
         <ul className="flex gap-4">
           <NavItem to={'/checkout'} title={'Checkout'} />
-          <NavItem to={'/cart'} title={'Cart'} />
+          <div>
+            <NavItem to={'/cart'} title={'Cart'} />
+            <span>{productCount}</span>
+          </div>
         </ul>
       </div>
     </nav>
