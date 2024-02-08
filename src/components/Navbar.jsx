@@ -7,7 +7,7 @@ const Navbar = () => {
   const { cartItems } = useContext(ShopContext);
   const productCount = cartItems.reduce((acc, curr) => acc + curr.cartItemsCount, 0);
   return (
-    <nav className="flex items-center justify-between bg-teal-400 px-4 py-2">
+    <nav className="flex w-full items-center justify-between bg-teal-400 px-4 py-2">
       <Link to={'/'}>
         <div className="">LOGO</div>
       </Link>
