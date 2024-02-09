@@ -14,9 +14,9 @@ const Navbar = () => {
       <div className="">
         <ul className="flex gap-4">
           <NavItem to={'/checkout'} title={'Checkout'} />
-          <div>
+          <div className="flex items-center justify-center">
             <NavItem to={'/cart'} title={'Cart'} />
-            <span>{productCount}</span>
+            <span className="flex h-8 w-8 border-black items-center justify-center border ">{productCount}</span>
           </div>
         </ul>
       </div>
